@@ -76,7 +76,13 @@ function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-40 px-4">
           <h1 className="text-2xl md:text-5xl lg:text-7xl mt-5 font-bold mb-7">Flourish Every Season</h1>
           <p className="text-xs sm:text-2xl font-semibold">Your source for beautiful, thriving plants</p>
-        <Link to="/featured">  <button className="bg-[#F7F6F2] hover:bg-[#5D755E] hover:text-white text-green-950 border-0 px-7 md:px-16 lg:px-20 py-3 lg:py-5 mt-10 mb-5 rounded-full text-lg md:text-2xl lg:text-2xl font-bold transition duration-300">
+        <Link to="/featured"> <button className="bg-[#F7F6F2] text-green-950 font-bold border-0 rounded-full transition duration-300
+  px-6 py-3 text-base
+  sm:py-4 sm:text-lg
+  md:px-12 md:py-5 md:text-xl
+  lg:px-16 lg:text-2xl
+  hover:bg-[#5D755E] hover:text-white
+  mt-6 mb-4">
             Shop Now
           </button>
         </Link>
@@ -84,13 +90,12 @@ function Home() {
       </div>
 
  <motion.div
-      className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-14 px-4 bg-white text-center cursor-pointer"
+      className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-14 px-9 sm:px-4 bg-white text-center cursor-pointer"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
     >
-      {/* Fruit Trees */}
       <Link to="/plants?category=fruit">
         <motion.div variants={cardVariants}>
           <div className="relative group w-44 mx-auto mb-4">
@@ -110,7 +115,6 @@ function Home() {
         </motion.div>
       </Link>
 
-      {/* Cactus */}
       <Link to="/plants?category=succulents">
         <motion.div variants={cardVariants}>
           <div className="relative group w-44 mx-auto mb-4">
@@ -130,7 +134,6 @@ function Home() {
         </motion.div>
       </Link>
 
-      {/* Air Purifying Plants */}
       <Link to="/plants?category=air">
         <motion.div variants={cardVariants}>
           <div className="relative group w-44 mx-auto mb-4">
@@ -148,7 +151,6 @@ function Home() {
         </motion.div>
       </Link>
 
-      {/* Pots */}
       <Link to="/pots">
         <motion.div variants={cardVariants}>
           <div className="relative group w-44 mx-auto mb-4">
@@ -166,7 +168,6 @@ function Home() {
         </motion.div>
       </Link>
 
-      {/* Gardening Tools */}
       <Link to="/gardenSupplies?category=tools">
         <motion.div variants={cardVariants}>
           <div className="relative group w-44 mx-auto mb-4">
@@ -184,7 +185,6 @@ function Home() {
         </motion.div>
       </Link>
 
-      {/* Herbs */}
       <Link to="/plants?category=herbs">
         <motion.div variants={cardVariants}>
           <div className="relative group w-44 mx-auto mb-4">
@@ -213,7 +213,6 @@ function Home() {
       <h2 className='text-green-950 text-2xl mb-4 underline underline-offset-8 '>NEWEST ARRIVALS</h2>
       <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-10 px-4 text-center mt-7 cursor-pointer'>
 
-        {/* Cat Mint */}
         <Link to={`/product/herbs/${encodeURIComponent("Cat Mint")}`}>
         <div className="group text-center">
        <motion.div variants={cardVariants}>
@@ -228,7 +227,6 @@ function Home() {
         </div>
         </Link>
 
-        {/* Guava */}
        <Link to={`/product/fruit/${encodeURIComponent("Guava Tree")}`}>
         <div className="group text-center">
         <motion.div variants={cardVariants}>
@@ -245,7 +243,6 @@ function Home() {
         </div>
         </Link>
 
-        {/* Nigella */}
       <Link to={`/product/herbs/${encodeURIComponent("Nigella")}`}>
         <div className="group text-center">
         <motion.div variants={cardVariants}>
@@ -261,7 +258,6 @@ function Home() {
         </div>
         </Link>
 
-        {/* Mullberries */}
       <Link to={`/product/fruit/${encodeURIComponent("Mulberry Tree")}`}>
         <div className="group text-center">
         <motion.div variants={cardVariants}>
@@ -277,7 +273,6 @@ function Home() {
         </div>
         </Link>
 
-        {/* Zinnia */}
       <Link to={`/product/flowering/${encodeURIComponent("Zinnia")}`}>
         <div className="group text-center">
       <motion.div variants={cardVariants}>
@@ -293,7 +288,6 @@ function Home() {
         </div>
          </Link>
 
-        {/* Lemon Balm */}
       <Link to={`/product/herbs/${encodeURIComponent("Lemon Balm")}`}>
         <div className="group text-center">
         <motion.div variants={cardVariants}>

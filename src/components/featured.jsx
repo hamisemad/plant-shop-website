@@ -50,7 +50,8 @@ function Featured() {
   ];
 
   const renderSection = (title, items) => (
-    <section className="mb-12 p-12 text-center">
+<section className="mb-12 p-4 sm:p-6 md:p-8 lg:p-12 text-center">
+
       <h2 className="text-3xl font-extrabold text-green-800 bg-clip-text tracking-wider uppercase border-b-4 border-green-500 inline-block mx-auto mb-6 ">
         {title}
       </h2>
