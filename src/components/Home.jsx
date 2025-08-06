@@ -90,7 +90,7 @@ function Home() {
       </div>
 
  <motion.div
-      className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-14 px-9 sm:px-4 bg-white text-center cursor-pointer"
+      className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 py-14 px-5 bg-white text-center cursor-pointer"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
